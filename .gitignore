@@ -4,3 +4,35 @@
 **/*.egg-info/
 **/checkpoints/
 dist/*
+# Large model weights and training artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+
+# Merlin / nnU-Net downloaded weights and outputs
+merlin/models/checkpoints/
+external/merlin-nnunet/nnUNetTrainerMerlin__nnUNetPlans__3d_fullres/
+external/merlin-nnunet/**/checkpoint_*.pth
+external/merlin-nnunet/**/training_log_*.txt
+
+# Local nnU-Net data/results folders
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+outputs/
+runs/
+wandb/
+mlruns/
+
+# Medical image data kept local
+*.nii
+*.nii.gz
+*.nrrd
+*.mha
+*.mhd
+*.dcm
+*.dicom
